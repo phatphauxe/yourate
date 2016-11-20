@@ -1,0 +1,9 @@
+<div class="review-card">
+  <div *ngIf="cardType=='movie'">
+  <movie-card [movie]="data"></movie-card>
+  </div>
+   <div>
+
+     <stars [value]="1.8" [canEdit]="true" (starValueChanged)="newStarValue($event)"></stars>
+   </div>
+</div>

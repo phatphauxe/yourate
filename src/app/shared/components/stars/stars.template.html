@@ -1,0 +1,21 @@
+
+<div *ngIf="canEdit" (mouseleave)="resetTemp()" (click)="setStarValue()" class= 'stars' style="cursor: default">
+  <i (mousemove)="updateStar($event, 1)" class="material-icons">{{getStar(1)}}</i>
+  <i (mousemove)="updateStar($event, 2)" class="material-icons">{{getStar(2)}}</i>
+  <i (mousemove)="updateStar($event, 3)" class="material-icons">{{getStar(3)}}</i>
+  <i (mousemove)="updateStar($event, 4)" class="material-icons">{{getStar(4)}}</i>
+  <i (mousemove)="updateStar($event, 5)" class="material-icons">{{getStar(5)}}</i>
+
+  <span style="vertical-align: top;">{{tempStarValue}}</span>
+</div>
+
+<div *ngIf="!canEdit" class= 'stars' style="cursor: default">
+  <i class="material-icons">{{getStar(1)}}</i>
+  <i class="material-icons">{{getStar(2)}}</i>
+  <i class="material-icons">{{getStar(3)}}</i>
+  <i class="material-icons">{{getStar(4)}}</i>
+  <i class="material-icons">{{getStar(5)}}</i>
+
+  <span style="vertical-align: top;">{{tempStarValue}}</span>
+</div>
+
