@@ -28,7 +28,9 @@
   "devDependencies": {
     "@types/jasmine": "^2.2.30",
     "angular-cli": "1.0.0-beta.16",
+    "angularfire2": "^2.0.0-beta.6",
     "codelyzer": "~0.0.26",
+    "firebase": "^3.6.1",
     "jasmine-core": "2.4.1",
     "jasmine-spec-reporter": "2.5.0",
     "karma": "1.2.0",
